@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stillpoint | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="home">
+    <header class="topbar">
+      <a class="brand" href="https://www.linkedin.com/in/sultan-ahmmed/" target="_blank" rel="noopener noreferrer">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>stillpoint</span>
+      </a>
+      <div class="topbar-tools">
+        <div class="topbar-meta">
+          <span id="current-date">Monday, September 18</span>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="current-time">09:41</span>
+        </div>
+        <button class="settings-button" id="settings-toggle" type="button" aria-label="Open settings"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 15.5A3.5 3.5 0 1 0 12 8.5a3.5 3.5 0 0 0 0 7Z" />
+            <path
+              d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="search-area">
+      <p class="eyebrow" id="greeting">Good morning</p>
+      <h1>A quiet place to begin</h1>
+
+      <form class="search-form" role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </span>
+        <label for="search" class="sr-only">Search the web</label>
+        <input id="search" type="search" placeholder="A quiet thought to begin..." autocomplete="off"
+          spellcheck="false">
+        <kbd aria-hidden="true">↵</kbd>
+      </form>
+
+      <nav class="shortcuts" id="shortcuts" aria-label="Quick links"></nav>
+
+      <div class="pomodoro-widget" id="pomodoro-widget">
+        <div class="pomodoro-display" id="pomodoro-display">
+          <div class="pomodoro-header">
+            <div class="pomodoro-dial" id="pomodoro-dial">
+              <div class="pomodoro-dial-core">
+                <span class="pomodoro-time" id="pomodoro-time">25:00</span>
+              </div>
+            </div>
+            <button class="pomodoro-fullscreen" id="pomodoro-fullscreen" type="button"
+              aria-label="Open timer fullscreen" title="Open timer fullscreen">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path class="expand-icon" d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 16v5h-5" />
+                <path class="minimize-icon" d="M8 3v5H3M16 3v5h5M8 21v-5H3M21 21v-5h-5" />
+              </svg>
+            </button>
+          </div>
+          <div class="pomodoro-controls">
+            <button class="pomodoro-btn" id="pomodoro-start" type="button" aria-label="Start timer" title="Start timer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path class="play-icon" d="m8 5 11 7-11 7Z" />
+                <path class="pause-icon" d="M8 5v14M16 5v14" />
+              </svg>
+            </button>
+            <button class="pomodoro-btn" id="pomodoro-reset" type="button" aria-label="Reset timer" title="Reset timer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6M4 4v4.6h4.6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button class="footer-support-btn" id="support-toggle" type="button" aria-label="Support developer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Support Developer</span>
+      </button>
+      <a href="https://duck.ai/" target="_blank" rel="noopener noreferrer">DuckDuckGo AI</a>
+    </footer>
+  </main>
+
+  <div class="welcome-overlay" id="welcome-overlay" hidden>
+    <div class="welcome-card" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+      <p class="eyebrow">A moment for you</p>
+      <h2 id="welcome-title"><span id="welcome-typing"></span><span class="typing-caret" aria-hidden="true"></span></h2>
+      <p class="welcome-description">What should Stillpoint call you?</p>
+      <form class="welcome-form" id="welcome-form">
+        <label class="sr-only" for="welcome-name">Your name</label>
+        <input id="welcome-name" type="text" placeholder="Your name" maxlength="40" autocomplete="name" required>
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <aside class="settings-panel" id="settings-panel" aria-hidden="true" aria-label="Settings">
+    <div class="settings-card" role="dialog" aria-labelledby="settings-title">
+      <div class="settings-heading">
+        <div>
+          <p class="eyebrow">Personalize your start</p>
+          <h2 id="settings-title">Settings</h2>
+        </div>
+        <button class="close-button" id="settings-close" type="button" aria-label="Close settings">×</button>
+      </div>
+
+      <div class="name-setting">
+        <label class="setting-label" for="name-input">Your name</label>
+        <form class="name-form" id="name-form">
+          <input id="name-input" type="text" maxlength="40" autocomplete="name" placeholder="Your name" required>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+
+      <label class="setting-label" id="engine-label">Search engine</label>
+      <div class="engine-picker" id="engine-picker">
+        <button class="engine-trigger" id="engine-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"
+          aria-labelledby="engine-label">
+          <span class="engine-name">DuckDuckGo</span>
+          <span class="engine-arrow" aria-hidden="true">⌄</span>
+        </button>
+        <div class="engine-menu" id="engine-menu" role="listbox">
+          <button role="option" data-engine="duckduckgo" class="selected" aria-selected="true">DuckDuckGo</button>
+          <button role="option" data-engine="brave" aria-selected="false">Brave Search</button>
+          <button role="option" data-engine="google" aria-selected="false">Google</button>
+          <button role="option" data-engine="bing" aria-selected="false">Bing</button>
+          <button role="option" data-engine="startpage" aria-selected="false">Startpage</button>
+          <button role="option" data-engine="ecosia" aria-selected="false">Ecosia</button>
+        </div>
+      </div>
+
+      <label class="setting-label background-label">Background</label>
+      <div class="background-grid" id="background-grid" role="listbox" aria-label="Choose a background"></div>
+
+      <div class="uploads-section" id="uploads-section" hidden>
+        <label class="setting-label">Your uploads</label>
+        <div class="uploads-grid" id="uploads-grid"></div>
+      </div>
+
+      <label class="upload-button" for="background-upload">Upload your own image</label>
+      <input class="sr-only" id="background-upload" type="file" accept="image/*">
+
+      <div class="shortcuts-settings">
+        <div class="setting-row">
+          <div>
+            <label class="setting-label" for="shortcuts-toggle">Shortcuts</label>
+            <p class="setting-description">Show useful websites below search</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="shortcuts-toggle" checked>
+            <span class="switch-track"></span>
+          </label>
+        </div>
+
+        <div class="shortcut-manager" id="shortcut-manager"></div>
+
+        <form class="add-shortcut-form" id="add-shortcut-form">
+          <input id="shortcut-name" type="text" placeholder="Name" maxlength="24" required>
+          <input id="shortcut-url" type="url" placeholder="https://example.com" required>
+          <button type="submit">Add shortcut</button>
+          <button type="button" id="cancel-shortcut" hidden>Cancel edit</button>
+        </form>
+      </div>
+
+      <div class="pomodoro-settings">
+        <div class="setting-row">
+          <div>
+            <label class="setting-label" for="pomodoro-toggle">Focus timer</label>
+            <p class="setting-description">Show pomodoro timer below shortcuts</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="pomodoro-toggle" checked>
+            <span class="switch-track"></span>
+          </label>
+        </div>
+
+        <div class="pomodoro-duration-setting">
+          <label class="setting-label" for="pomodoro-duration">Timer duration (minutes)</label>
+          <div class="duration-picker">
+            <button type="button" class="duration-btn" data-duration="15">15</button>
+            <button type="button" class="duration-btn selected" data-duration="25">25</button>
+            <button type="button" class="duration-btn" data-duration="30">30</button>
+            <button type="button" class="duration-btn" data-duration="45">45</button>
+            <button type="button" class="duration-btn" data-duration="60">60</button>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div>
+            <label class="setting-label" for="pomodoro-notif">Notifications</label>
+            <p class="setting-description">Alert when timer finishes</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="pomodoro-notif" checked>
+            <span class="switch-track"></span>
+          </label>
+        </div>
+
+      </div>
+
+      <p class="settings-note">Your choices are saved on this device.</p>
+      <button class="reset-button" id="settings-reset" type="button">Reset to defaults</button>
+    </div>
+  </aside>
+
+  <div class="support-modal" id="support-modal" aria-hidden="true">
+    <div class="support-modal-content" role="dialog" aria-modal="true" aria-labelledby="support-title">
+      <button class="support-modal-close" id="support-modal-close" type="button" aria-label="Close modal">×</button>
+      <h3 id="support-title">Support Stillpoint</h3>
+      <p class="support-modal-desc">No cash needed. If Stillpoint helps you, share this extension as much as possible
+        with someone who might enjoy a calmer new tab.</p>
+
+      <div class="support-options">
+        <div id="support-options-list"></div>
+      </div>
+
+      <p class="support-thanks">Made with care in Bangladesh ·
+        <a class="developer-link" href="https://github.com/sultanahmmed" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
