@@ -92,6 +92,34 @@ After making changes to the source, return to the extensions page and click the 
 
 ---
 
+## 🖼️ Preview
+
+### New Tab
+
+A calm, minimal new tab experience with private search, personalized backgrounds, quick shortcuts, and a time-aware greeting.
+
+![Stillpoint New Tab — Home](screenshots/home.png)
+
+### Search & Shortcuts
+
+Quickly search the web or open your favorite websites from a clean, distraction-free interface.
+
+![Stillpoint New Tab — Search and Shortcuts](screenshots/search-shortcuts.png)
+
+### Focus Timer
+
+Use the built-in Pomodoro timer to create focused work sessions.
+
+![Stillpoint New Tab — Focus Timer](screenshots/focus-timer.png)
+
+### Settings
+
+Customize your search engine, background, shortcuts, and focus duration.
+
+![Stillpoint New Tab — Settings](screenshots/settings.png)
+
+---
+
 ## 🚀 Usage
 
 | Action | Shortcut |
